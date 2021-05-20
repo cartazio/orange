@@ -8,6 +8,7 @@ import Test.Tasty
 import Test.Tasty.HUnit
 
 
+
 main :: IO ()
 main = defaultMain $ testGroup "zero Rep tests"
           [testGroup "single precision"

@@ -69,7 +69,7 @@ library
     Data.Distribution.Integers
     Data.Random.Utils
 
-  c-sources: cmmbits/floatsAndBits.cmm
+  cmm-sources: cmmbits/floatsAndBits.cmm
   -- Modules exported by the library.
 
   -- Modules included in this library but not exported.
@@ -87,6 +87,9 @@ library
                       ,transformers >= 0.5 && < 0.6
                       ,transformers-compat >= 0.3
                       ,vector >= 0.11 && < 0.14
+                       --  ,safeword ^>= 0.1
+                      , wide-word^>= 0.1.1
+                      -- wide word for now, safeword longer term
                       -- vector  0.13 wont likely break stuff i care about
                   -- entropy will later be folded into random, probably
 
@@ -113,7 +116,9 @@ test-suite orange-test
   main-is:             MyLibTest.hs
 
   -- Test dependencies.
-  build-depends:       base ^>=4.12.0.0, primitive ^>=0.7.0.0, ghc-prim ^>=0.5.3
+  build-depends:       base
+                      , primitive
+                      ,ghc-prim
 
 test-suite word_and_float
   type: exitcode-stdio-1.0
