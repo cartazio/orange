@@ -7,7 +7,7 @@ import Data.Word(Word32)
 import Data.Int(Int32)
 import Control.Monad.ST(runST)
 import Control.Monad(forM,forM_)
-import Data.Vector.Unboxed.Mutable as DVM
+import qualified Data.Vector.Unboxed.Mutable as DVM
 import qualified Data.Vector.Unboxed as DV
 
 --import Data.Distribution.Integers
