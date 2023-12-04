@@ -80,8 +80,8 @@ library
   other-extensions:    CPP, Trustworthy, ScopedTypeVariables, BangPatterns, UnboxedTuples, MagicHash, GADTs, DeriveFunctor, DeriveDataTypeable, DeriveGeneric, GHCForeignImportPrim, UnliftedFFITypes, MultiParamTypeClasses, FunctionalDependencies
 
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.16
-                      ,ghc-prim >= 0.5 && <= 0.8
+  build-depends:       base >=4.8 && <4.20
+                      ,ghc-prim >= 0.5 && <= 0.10
                      --  ,entropy == 0.3.*
                       ,numeric-extras == 0.1.*
                       ,primitive ^>= 0.7.1
